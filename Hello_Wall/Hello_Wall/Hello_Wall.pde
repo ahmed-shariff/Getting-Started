@@ -109,11 +109,11 @@ void setup(){
   
   widgetOne.set_mechanism(pantograph);
   
-  widgetOne.add_actuator(1, CW, 1);
-  widgetOne.add_actuator(2, CW, 2);
+  widgetOne.add_actuator(1, CCW, 2);
+  widgetOne.add_actuator(2, CW, 1);
  
-  widgetOne.add_encoder(1, CW, 180, 13824, 1);
-  widgetOne.add_encoder(2, CW, 0, 13824, 2);
+  widgetOne.add_encoder(1, CCW, 241, 10752, 2);
+  widgetOne.add_encoder(2, CW, -61, 10752, 1);
   
   widgetOne.device_set_parameters();
   
